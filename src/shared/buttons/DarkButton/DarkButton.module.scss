@@ -1,0 +1,19 @@
+
+.button {
+    font-size: 18px;
+    padding: 5px 20px;
+
+    background: var(--color-black);
+    border-radius: 5px;
+
+    position: absolute;
+    z-index: 500;
+
+    transition: .3s;
+
+    &:hover {
+        color: var(--color-blue);
+        transition: .3s;
+    }
+}
+

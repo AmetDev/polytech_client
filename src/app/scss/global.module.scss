@@ -1,0 +1,25 @@
+.icon {
+  &:hover {
+    & path {
+      fill: var(--color-blue);
+      transition: 0.3s;
+    }
+  }
+}
+
+.icon path {
+  fill: white;
+  transition: 0.3s;
+}
+
+.page_loader {
+  position: absolute;
+  background: var(--color-dark-gray);
+
+  top: 0 !important;
+  left: 0 !important;
+
+  width: 100vw !important;
+  height: 100vh !important;
+}
+

@@ -1,0 +1,54 @@
+.burger {
+  position: relative;
+
+  // @media (max-width: 1240px) {
+  //   transform: scale(0.9);
+  // }
+
+  // @media (max-width: 550px) {
+  //   transform: scale(0.8);
+  // }
+}
+
+.toggle {
+  padding: .5rem;
+  background: transparent;
+  border: .05rem solid transparent;
+
+  margin: auto;
+}
+
+.toggle:focus {
+  outline-width: 0;
+}
+
+.toggle > .top,
+.middle,
+.bottom {
+  background: #ffffff;
+  display: block;
+
+  transform: rotate(0deg);
+  transition: 0.2s ease all;
+
+  border-radius: .4rem;
+  height: .15rem;
+  width: 1.75rem;
+  margin-bottom: .4rem;
+}
+
+.toggle .bottom {
+  margin-bottom: 0;
+}
+
+.active .top {
+  transform: rotate(45deg);
+  transform-origin: 15% 15%;
+}
+.active .middle {
+  opacity: 0;
+}
+.active .bottom {
+  transform: rotate(-45deg);
+  transform-origin: -5% 40%;
+}

@@ -1,0 +1,29 @@
+.home__main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.75rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+  }
+
+  @media (max-width: 768px) {
+      margin-top: 25px;
+  }
+}
+
+.home__search {
+  // @media (max-width: 1390px) {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}

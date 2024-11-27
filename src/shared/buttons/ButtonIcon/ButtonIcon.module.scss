@@ -1,0 +1,23 @@
+.button {
+  background: rgba(9, 94, 220, 0.6);
+  border: 1px solid var(--color-blue);
+  display: inline-block;
+
+  & p {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+
+  padding: 1rem 10.75rem;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    background: #0c58cb;
+    box-shadow: 0 0 0.6rem 0.2rem rgba(12, 88, 203, 0.2);
+    transition: 0.4s;
+  }
+}

@@ -1,0 +1,43 @@
+.title {
+    position: absolute;
+    width: 5em;
+
+    color: var(--color-blue);
+    top: -1.5em;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+}
+
+
+.pairing {
+    width: 2.1em;
+    background: var(--color-black);
+
+    border-radius: .3em;
+    position: relative;
+}
+
+.pair {
+    height: 3.5625em;
+
+    font-size: 0.8em;
+    font-weight: bold;
+
+    position: relative;
+    &:nth-child(n + 3) {
+        border-top: 0.0625em solid rgba(86, 79, 79, 0.2);
+    }
+
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+.pair p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

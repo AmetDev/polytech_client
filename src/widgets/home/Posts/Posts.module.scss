@@ -1,0 +1,24 @@
+
+.posts {
+    width: 31rem;
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+}
+
+.viewAll {
+    font-size: 1.5rem;
+    margin-top: auto;
+
+    padding-top: 1.5rem;
+    color: var(--color-blue);
+
+    @media (max-width: 768px) {
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,7 @@
+.materialElement {
+	cursor: pointer;
+	&:hover {
+		color: var(--color-blue);
+		transition: all 0.3s ease-out;
+	}
+}

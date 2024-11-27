@@ -1,0 +1,124 @@
+.departament {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  h1 {
+    font-size: 48px;
+
+    @media (max-width: 592px) {
+      font-size: 24px;
+    }
+  }
+
+  h2 {
+    font-size: 36px;
+
+    @media (max-width: 592px) {
+      font-size: 24px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-md);
+  }
+}
+
+.departament__desceplines {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    width: 340px;
+    height: 245px;
+
+    text-align: center;
+
+    background: var(--color-black);
+    border-radius: var(--border-radius-md);
+    transition: var(--transition);
+
+    h2 {
+      font-size: 28px;
+      font-weight: 900;
+      width: 330px;
+      margin-top: 20px;
+
+      @media (max-width: 741px) {
+        width: auto;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      width: 330px;
+      margin-top: 20px;
+
+      @media (max-width: 741px) {
+        width: auto;
+      }
+    }
+
+    &:hover {
+      background: var(--color-red);
+    }
+
+    @media (max-width: 1435px) {
+      width: 45%;
+    }
+
+    @media (max-width: 1120px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 1466px) {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.departament__desceplines__title {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.departament__teachers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  li {
+    width: 700px;
+    padding: 20px;
+    background: var(--color-black);
+
+    @media (max-width: 375px) {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 1475px) {
+    justify-content: center;
+    align-items: center;
+  }
+}

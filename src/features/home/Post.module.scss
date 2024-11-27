@@ -1,0 +1,136 @@
+.post {
+	position: relative;
+
+	border-radius: var(--border-radius-md);
+	overflow: hidden;
+
+	&:not(:first-child) {
+		margin-top: 2rem;
+
+		@media (max-width: 768px) {
+			margin-top: 20px;
+		}
+	}
+
+	& a {
+		outline: none;
+	}
+}
+
+.info {
+	height: 5.25rem;
+	background: var(--color-dark-secondary);
+	display: flex;
+	align-items: center;
+	//text-align: center;
+	justify-content: space-between;
+	position: relative;
+
+	@media (max-width: 768px) {
+		height: 72px;
+	}
+}
+
+.title {
+	max-width: 20rem;
+	max-height: 2.75rem;
+	margin-top: 0.5rem;
+	margin-left: 0.75rem;
+	padding-right: 0.8rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+
+	@media (max-width: 768px) {
+		max-width: 170px;
+		max-height: 45px;
+		//margin-left: 15px;
+		padding-right: 8px;
+		font-size: 17px;
+		font-weight: 400;
+	}
+}
+
+.description {
+	//max-width: 100px;
+	max-height: 2.6rem;
+	margin-top: 0.5rem;
+	margin-right: 0.25rem;
+	//text-align: start;
+	//	padding-right: 1.1rem;
+	font-size: 0.9rem;
+
+	margin-top: auto;
+	padding: 0 0.6rem 0.6rem 0;
+	color: var(--color-middle-gray);
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+}
+
+.image {
+	position: sticky !important;
+
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+        -o-object-fit: cover;
+	transition: transform 0.3s linear;
+
+	@media (max-width: 768px) {
+		max-height: 260px;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.postLoading {
+	border-radius: var(--border-radius-md);
+	overflow: hidden;
+
+	&:not(:first-child) {
+		margin-top: 2rem;
+	}
+}
+
+.imageLoading {
+	height: 16.15rem;
+
+	border-top-left-radius: var(--border-radius-md);
+	border-top-right-radius: var(--border-radius-md);
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+
+	@media (max-width: 768px) {
+		height: 260px;
+	}
+}
+
+.titleLoading {
+	height: 1.75rem;
+	width: 11rem;
+
+	margin-left: 0.75rem;
+	margin-right: 3rem;
+
+	@media (max-width: 768px) {
+		width: 150px;
+		height: 25px;
+	}
+}
+
+.descLoading {
+	width: 6.75rem;
+	height: 1.25rem;
+
+	position: absolute;
+	right: 0.9rem;
+	bottom: 0.9rem;
+
+	@media (max-width: 768px) {
+		width: 80px;
+		height: 18px;
+	}
+}

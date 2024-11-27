@@ -1,0 +1,67 @@
+// Button
+.button__blue {
+  font-weight: bold;
+  background: var(--color-blue);
+  border-radius: var(--border-radius-md);
+
+  @media (max-width: 768px) {
+    font-size: 32px !important;
+  }
+
+  @media (max-width: 448px) {
+    font-size: 24px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    font-weight: 400;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 20px !important;
+  }
+}
+
+// Requzits
+.requzits__template {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.3rem;
+  gap: 1.8rem;
+  padding: 2rem 3rem;
+  margin-top: 1.5rem;
+
+  background: var(--color-black);
+  border-radius: var(--border-radius-md);
+
+  .requzits__template__get {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media (max-width: 620px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 672px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 440px) {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 330px) {
+    font-size: 0.85rem;
+  }
+}

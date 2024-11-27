@@ -1,0 +1,481 @@
+.speciality__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: 1400px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.speciality__top__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 60%;
+
+  h1 {
+    font-size: 2.2rem;
+    color: var(--color-light-blue);
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    width: 695px;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1.2rem;
+
+    @media (max-width: 768px) {
+      width: auto;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
+}
+
+.speciality__top__image {
+  img {
+    width: 859px;
+    height: 713px;
+    object-fit: cover;
+    border-radius: var(--border-radius-md);
+
+    @media (max-width: 1400px) {
+      width: 100vw;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 780px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// speciality main info
+.speciality__main__info {
+  display: flex;
+  gap: 39px;
+  margin-top: 2rem;
+
+  li {
+    width: 361px;
+    height: 331px;
+    padding: 1.5rem;
+    background: var(--color-black);
+    border-radius: var(--border-radius-md);
+
+    h3 {
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #b5b5b5;
+    }
+
+    p {
+      margin-top: 0.8rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 150%;
+    }
+  }
+
+  @media (max-width: 1085px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// disciplines
+.disciplines {
+  margin-top: 3rem;
+
+  h2 {
+    font-size: 32px;
+
+    @media (max-width: 540px) {
+      font-size: 24px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+    margin-top: 3rem;
+
+    li {
+      width: 100%;
+      padding: 1rem;
+
+      text-align: center;
+      font-weight: bold;
+      font-size: 32px;
+
+      border-radius: var(--border-radius-md);
+      background: var(--color-black);
+
+      @media (max-width: 1085px) {
+        font-size: 24px;
+      }
+
+      @media (max-width: 540px) {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Question answer
+.question__answer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3rem;
+  margin-top: 6rem;
+}
+
+.question__answer__block {
+  display: flex;
+  gap: 1rem;
+
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    @media (max-width: 730px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  ul {
+    width: 1016px;
+
+    li {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 140%;
+
+      @media (max-width: 730px) {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 730px) {
+      width: auto;
+    }
+  }
+
+  &:nth-child(1) {
+    h3 {
+      position: relative;
+      transform-style: preserve-3d;
+      z-index: -1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 8%;
+        width: 255px;
+        height: 275px;
+        transform: translateZ(-1px);
+        background: url("../../../public/assets/images/speciality/presentation.svg");
+
+        @media (max-width: 1030px) {
+          display: none;
+        }
+      }
+    }
+
+    ul {
+      margin-left: 1rem;
+      li {
+        list-style-type: disc;
+      }
+    }
+
+    @media (max-width: 730px) {
+      flex-direction: column;
+
+      ul {
+        width: auto;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    // h3 {
+    //   position: relative;
+    //   transform-style: preserve-3d;
+    //   z-index: -1;
+
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 8%;
+    //     width: 225px;
+    //     height: 205px;
+    //     transform: translateZ(-1px);
+    //     background: url("../../../public/assets/images/speciality/laptop.svg");
+    //   }
+    // }
+
+    ul {
+      width: 816px;
+    }
+
+    @media (max-width: 730px) {
+      flex-direction: column;
+
+      ul {
+        order: 1;
+        width: auto;
+      }
+
+      h3 {
+        order: 0;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    @media (max-width: 515px) {
+      flex-direction: column;
+    }
+  }
+
+  &:nth-child(4) {
+    h3 {
+      width: 837px;
+
+      @media (max-width: 730px) {
+        width: auto;
+      }
+    }
+
+    ul {
+      width: 638px;
+
+      @media (max-width: 730px) {
+        width: auto;
+      }
+    }
+
+    @media (max-width: 730px) {
+      flex-direction: column;
+
+      h3 {
+        order: 0;
+      }
+
+      ul {
+        order: 1;
+      }
+    }
+  }
+
+  &:nth-child(5) {
+    @media (max-width: 515px) {
+      flex-direction: column;
+    }
+  }
+}
+
+// Resume
+.speciality__resume {
+  margin-top: 6rem;
+
+  h2 {
+    font-size: 64px;
+
+    @media (max-width: 620px) {
+      font-size: 48px;
+    }
+  }
+}
+
+.speciality__resume__wrapper {
+  width: 100%;
+
+  padding: 24px 80px 80px 80px;
+
+  margin-top: 3rem;
+  background: var(--color-black);
+  border-radius: var(--border-radius-md);
+
+  @media (max-width: 765px) {
+    padding: 24px;
+  }
+}
+
+.speciality__resume__main {
+  display: flex;
+
+  img {
+    border-radius: 12px;
+  }
+
+  @media (max-width: 1450px) {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.speciality__resume__main__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5rem;
+
+  h3 {
+    font-size: 64px;
+
+    @media (max-width: 1106px) {
+      font-size: 38px;
+      text-align: center;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 28px;
+    }
+  }
+
+  h4 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 1rem;
+
+    @media (max-width: 1106px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 20px;
+    }
+  }
+
+  ul {
+    margin-top: auto;
+    display: flex;
+    gap: 1.5rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      p {
+        font-size: 24px;
+
+        @media (max-width: 1106px) {
+          font-size: 20px;
+        }
+
+        @media (max-width: 454px) {
+          font-size: 18px;
+        }
+
+        @media (max-width: 320px) {
+          font-size: 16px;
+        }
+      }
+
+      img {
+        @media (max-width: 360px) {
+          width: 10%;
+          height: 10%;
+        }
+      }
+
+      @media (max-width: 360px) {
+        gap: 0.5rem;
+      }
+    }
+
+    @media (max-width: 1620px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 1450px) {
+      margin-top: 3rem;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 1450px) {
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 0;
+  }
+}
+
+.speciality__resume__skills,
+.speciality__resume__experience {
+  margin-top: 4rem;
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px 117px;
+    margin-top: 2rem;
+
+    li {
+      width: 527px;
+      font-size: 32px;
+
+      @media (max-width: 1106px) {
+        font-size: 24px;
+      }
+
+      @media (max-width: 765px) {
+        width: auto;
+      }
+
+      @media (max-width: 454px) {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 1620px) {
+      gap: 45px;
+    }
+
+    @media (max-width: 1106px) {
+      gap: 24px;
+    }
+
+    @media (max-width: 454px) {
+      margin-top: 1rem;
+    }
+  }
+
+  @media (max-width: 454px) {
+    margin-top: 2rem;
+  }
+}

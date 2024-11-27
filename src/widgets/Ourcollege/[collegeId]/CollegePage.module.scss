@@ -1,0 +1,8 @@
+.wrapperInter { 
+    a {
+		color: var(--color-cyan);
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

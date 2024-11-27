@@ -1,0 +1,70 @@
+.our__colleage {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  img {
+    border-radius: var(--border-radius-sm);
+  }
+
+  p {
+    letter-spacing: 1.1px;
+  }
+
+  .our__colleage__main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .our__colleage__second {
+    display: flex;
+    justify-content: space-between;
+
+    .our__colleage__second__left {
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media (max-width: 897px) {
+        width: 100%;
+      }
+    }
+
+    .our__colleage__second__right {
+      img {
+        width: 1140px;
+        height: auto;
+
+        @media (max-width: 897px) {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width: 897px) {
+      flex-direction: column;
+			gap: 20px;
+    }
+  }
+
+  .our__colleage__dormitory {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.our__colleage__link {
+	width: 100%;
+	background: #000;
+	text-align: center;
+	padding: 20px;
+	border-radius: var(--border-radius-sm);
+}

@@ -1,0 +1,76 @@
+.water__rules__top {
+  margin-top: 100px;
+
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 42px;
+    }
+  }
+}
+
+.water__rules__head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+
+  img {
+    width: 60%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--border-radius-md);
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  p {
+    margin-left: 40px;
+    font-size: 50px;
+    line-height: 120%;
+  }
+
+  @media (max-width: 1440px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+}
+
+.water__rules__main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  line-height: 120%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    width: 100%;
+    padding: 30px 70px;
+
+    background: var(--color-black);
+    border-radius: var(--border-radius-md);
+
+    li {
+      list-style-type: disc;
+    }
+
+    @media (max-width: 425px) {
+      padding: 30px;
+    }
+  }
+}

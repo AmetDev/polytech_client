@@ -1,0 +1,74 @@
+.background1,
+.background2,
+.background3,
+.background4,
+.eqation1,
+.eqation2 {
+  position: absolute;
+  z-index: -2500;
+
+  @media (max-width: 350px) {
+    display: none;
+  }
+}
+
+.background1 {
+  left: 0;
+  top: 0;
+}
+
+.background2 {
+  top: 2.5rem;
+  right: 0;
+}
+
+.background3 {
+  left: 0;
+  top: 105rem;
+
+  @media (max-width: 1240px) {
+    height: 1100px;
+  }
+}
+
+.background4 {
+  right: 0;
+  top: 150rem;
+
+  @media (max-width: 1240px) {
+    display: none;
+  }
+}
+
+.eqation1 {
+  right: 0;
+  top: 112rem;
+
+  @media (max-width: 550px) {
+    transform: scale(.6);
+  }
+}
+
+.eqation2 {
+  left: 5.9rem;
+  top: 200rem;
+
+  @media (max-width: 550px) {
+    left: 0;
+    transform: scale(.6);
+  }
+}
+
+@media screen and (min-width: 2320px) {
+  .background1,
+  .background3,
+  .eqation2 {
+    left: calc((100vw - 71.5rem) / 2);
+  }
+
+  .background2,
+  .background4,
+  .eqation1 {
+    right: calc((100vw - 71.5rem) / 2);
+  }
+}

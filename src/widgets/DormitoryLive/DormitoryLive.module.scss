@@ -1,0 +1,35 @@
+.dormitory__live {
+  margin-top: 100px;
+
+  p {
+    margin-top: 40px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  p:last-child {
+    line-height: 180%;
+  }
+}
+
+.dormitory__live__block {
+  padding: 40px 50px;
+  margin-top: 40px;
+
+  background: var(--color-black);
+  border-radius: var(--border-radius-sm);
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 20px;
+    gap: 20px;
+
+    li {
+      list-style-type: disc;
+    }
+  }
+}

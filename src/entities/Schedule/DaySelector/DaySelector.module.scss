@@ -1,0 +1,28 @@
+
+.selector {
+    margin-top: 2.75em;
+}
+
+.daysList {
+    display: flex;
+    gap: .5em;
+}
+
+.dayOfWeek {
+    padding: .35em .8em;
+
+    background: var(--color-black);
+    border-radius: .25em;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.dayOfWeek.picked {
+    background-color: var(--color-blue);
+    transition: .3s;
+}
+
+

@@ -1,0 +1,133 @@
+
+.contact {
+    background: var(--color-dark-secondary);
+
+    margin-top: 4.6rem;
+    padding: 3rem 4.55rem;
+
+    border-radius: var(--border-radius-md);
+
+    @media (max-width: 768px) {
+        width: 90%;
+        margin: auto;
+
+        margin-top: 40px;
+        padding: 20px 14px;
+    }
+}
+
+.form {
+
+    & * {
+        display: block;
+        width: 100%;
+    }
+
+    :first-child {
+        margin-top: 2.25rem;
+
+        @media (max-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
+    :not(:first-child) {
+        margin-top: 1.5rem;
+
+        @media (max-width: 768px) {
+            margin-top: 15px;
+        }
+    }
+}
+
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+        font-size: 23px;
+    }
+}
+
+.input {
+    background: var(--color-black);
+    color: white;
+
+    font-size: 1.1rem;
+
+    padding: .7rem 1.6rem;
+    border-radius: var(--border-radius-md);
+
+    @media (max-width: 768px) {
+        border-radius: var(--border-radius-sm);
+        font-size: 17px;
+        padding: 9px 12px;
+    }
+}
+
+.textarea {
+    min-height: 12rem;
+
+    padding: 1.6rem 1.6rem;
+
+    @media (max-width: 768px) {
+        padding: 9px 12px;
+    }
+}
+
+.submit {
+    margin-top: 2.95rem;
+    background: var(--color-blue);
+
+    height: 3rem;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    border-radius: var(--border-radius-md);
+
+    transition: .4s;
+
+    &:hover {
+        background: #0c58cb;
+        box-shadow: 0rem 0rem .6rem .2rem rgba(12,88,203,0.2);
+        transition: .4s;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 19px;
+        height: 48px;
+    }
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+
+    & path {
+        transition: .4s;
+    }
+
+    &:hover {
+        & path {
+            fill: var(--color-blue);
+            transition: .4s;
+        }
+    }
+
+    // & svg {
+    //     max-width: 100%;
+    //     height: auto;
+    //     /* Optional */
+    //     display: block;
+
+    // }
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+

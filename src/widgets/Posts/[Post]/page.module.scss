@@ -1,0 +1,36 @@
+.post__main {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	img {
+		width: auto;
+		height: auto;
+		object-fit: none;
+		border-radius: var(--border-radius-md);
+	}
+
+	a {
+		color: var(--color-cyan);
+		&:hover {
+				text-decoration: underline;
+			}
+	  }
+}
+
+.post__views {
+	margin-top: 40px;
+	display: flex;
+	justify-content: end;
+
+	span {
+		display: flex;
+		align-items: center;
+
+		gap: 10px;
+		padding: 20px 40px;
+
+		border-radius: var(--border-radius-md);
+		background: var(--color-black);
+	}
+}
